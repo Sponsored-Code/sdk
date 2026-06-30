@@ -1,0 +1,44 @@
+{
+  "name": "@sponsored-code/sdk",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Official SDK for the Sponsored Code brand API — manage campaigns and pull impression analytics with an API key.",
+  "keywords": [
+    "sponsored-code",
+    "sponsorship",
+    "usdc",
+    "polygon",
+    "claude-code",
+    "sdk",
+    "api"
+  ],
+  "license": "PolyForm-Shield-1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sponsored-code/sdk.git"
+  },
+  "homepage": "https://sponsoredcode.com",
+  "bugs": "https://github.com/sponsored-code/sdk/issues",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "tsx tests/sdk.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
